@@ -27,7 +27,7 @@ function addToStorage()
         localStorage.setItem('todos',JSON.stringify(todoItems));
     }
     else{
-        alert("Zaten listede var")
+        alert("This item already exists.")
     }
 
 
@@ -60,6 +60,8 @@ addBtnEl.addEventListener("click", () =>
 {
     addToStorage()
     createList()
+    textbarEl.value=""
+    textbarEl.focus();
 
 } )
 
@@ -74,26 +76,16 @@ deleteBtnEl.addEventListener("click", () =>
         }
     })
     localStorage.setItem('todos',JSON.stringify(getItemsInStorage));
+    textbarEl.value=""
+    textbarEl.focus();
     createList();
 } )
-
-updateBtnEl.addEventListener("click", () =>
-    {
-        let getItemsInStorage=JSON.parse(localStorage.getItem('todos'))
-        getItemsInStorage.forEach((item,index)=>
-        {
-            if(item === textbarEl.value)
-            {
-                getItemsInStorage.splice(index,1);
-            }
-        })
-        localStorage.setItem('todos',JSON.stringify(getItemsInStorage));
-        createList();
-    } )
     
 
 clearBtnEl.addEventListener("click", () =>
 {
+    textbarEl.value=""
+    textbarEl.focus();
     mainlistEl.innerHTML="";
     localStorage.clear();
     getlocalList();
