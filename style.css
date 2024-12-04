@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(0.25turn, #21429e, #00b86e, #3cc1f6);
+    font-family: cursive;
+}
+main
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.main-list
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main article
+{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap:1rem;
+}
+
+.list-section ul li 
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: rgba(255, 228, 196, 0.518);
+    padding: 1rem;
+    width: 500px;
+    margin-bottom:0.3rem;
+    font-size: larger;
+    border-radius: 1rem;
+}
+
+.text-bar
+{
+    font-size: larger;
+    width: 500px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+button
+{
+    cursor: pointer;
+}
+li
+{
+    cursor: pointer;
+}
+li:hover
+{
+    background-color: rgb(179, 98, 0);
+}
+button
+{
+    padding: 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+button:nth-child(1)
+{
+    background-color: rgb(0, 255, 0);
+}
+button:nth-child(1):hover
+{
+    background-color: rgb(0, 210, 0);
+}
+
+/* button:nth-child(2)
+{
+    background-color: aqua;
+}
+
+button:nth-child(2):hover
+{
+    background-color: rgb(0, 194, 194);
+} */
+button:nth-child(2)
+{
+    background-color: red;
+}
+
+button:nth-child(2):hover
+{
+    background-color: rgb(190, 0, 0);
+}
+
+button:nth-child(3)
+{
+    background-color: rgb(255, 0, 212);
+}
+
+button:nth-child(3):hover
+{
+    background-color: rgb(164, 0, 162);
+}
+
